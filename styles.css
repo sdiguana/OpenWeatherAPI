@@ -1,0 +1,23 @@
+body {
+  background-color: #333; }
+
+.navElm {
+  background-color: #afa;
+  border-radius: 0;
+  padding: 5px; }
+  .navElm:hover {
+    background-color: #bdb; }
+
+#weatherReport {
+  color: #ad7; }
+
+.buttonNum-1 {
+  background-color: #3a3; }
+
+.buttonNum-2 {
+  background-color: #6a6; }
+
+.buttonNum-3 {
+  background-color: #8d9; }
+
+/*# sourceMappingURL=styles.css.map */

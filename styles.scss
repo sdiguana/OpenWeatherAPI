@@ -1,0 +1,41 @@
+/*
+------------------------------------------------------------------------
+assignment 8
+Continue adding visual style to your weather application
+Add at least one Sass list or map to your Sass file(s)
+Add at least one @each or @for loop to your Sass file(s)
+Convert your API calls to use:
+https://uwpce-weather-proxy.herokuapp.com/data/2.5/weather
+Push your code to Github and publish it to Github pages.
+------------------------------------------------------------------------
+Rubric	                                    Points
+All HTML passes validation	                1
+Has at least one Sass list or map	        3
+Has at least one @for or @each loop	        3
+------------------------------------------------------------------------
+ */
+
+@import "_variables";
+
+body {
+  background-color: $background;
+}
+.navElm {
+  background-color: $nav;
+  border-radius: 0;
+  padding: 5px;
+  &:hover {background-color: $navHover;}
+
+}
+#weatherReport {
+  color: $textColor;
+}
+
+
+
+@each $btnColor in $btnColors {
+  $i: index($btnColors, $btnColor);
+  .buttonNum-#{$i} {
+    background-color: $btnColor;
+  }
+}

@@ -30,8 +30,8 @@ function myLocBtnFire() {
 function qStringBuilder(lat, lon) {
     const key = "2ae13408d002af239c3d50f035701549"; //this would be on the backend if a real/production program
     const uri = "api.openweathermap.org/data/2.5/";
-    //const corsPrepend = "https://cors-anywhere.herokuapp.com/";
-    const corsPrepend = "https://uwpce-weather-proxy.herokuapp.com/data/2.5/weather/";
+    const corsPrepend = "https://cors-anywhere.herokuapp.com/";
+    //const corsPrepend = "https://uwpce-weather-proxy.herokuapp.com/data/2.5/weather/";
     return `${corsPrepend}http://${uri}weather?lat=${lat}&lon=${lon}&APPID=${key}`;
 }
 function iconStingBuilder(iconCode) {
